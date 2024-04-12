@@ -1,10 +1,10 @@
 package com.example.buysell.models;
 
 import com.example.buysell.models.enums.Role;
-import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.persistence.*;
 import java.util.*;
 
 @Entity

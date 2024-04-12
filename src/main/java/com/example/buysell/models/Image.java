@@ -1,6 +1,6 @@
 package com.example.buysell.models;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "images")
@@ -14,6 +14,7 @@ public class Image {
     private String contentType;
     private boolean previewImage;
     @Lob
+    @Column(name = "bytes", columnDefinition = "longblob")
     private byte[] bytes;
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     private Product product;
